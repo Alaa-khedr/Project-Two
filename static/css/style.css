@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/lablabme1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.8; /* Adjust the opacity value as needed */
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto 0;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(236, 234, 234, 0.458); /* Adjust the background color and opacity as needed */
+    
+}
+
+h1 {
+    color: #212121;
+}
+
+.task-label {
+    display: block;
+    margin-bottom: 10px;
+}
+.completed-task-label {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: line-through;
+}
+
+.highlighted-word {
+    background-color: yellow; /* or any other color you prefer */
+}
+
+/* Move the search input and button to the top right */
+#searchInput {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 300px; /* Adjust the width as needed */
+    height: 35px; /* Adjust the height as needed */
+    font-size: 16px; /* Adjust the font size as needed */
+    border-radius: 8px; 
+}
+
+#searchButton {
+    position: absolute;
+    height: 40px; /* Adjust the height as needed */
+    top: 20px;
+    right: 20px;
+    background-color: #047311; /* Change the background color as desired */
+    color: white; /* Change the text color as desired */
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#searchButton:hover {
+    background-color: #025f07; /* Change the hover background color as desired */
+}
+
+
+
+/* Center the start and stop recording buttons */
+#startRecording,
+#stopRecording {
+    display: inline-block;
+    /* margin-left: 80px;
+    margin: 50px auto 0; */
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 25px; /* Apply rounded edges */
+    background-color: #007BFF; /* Change the background color as desired */
+    color: white; /* Change the text color as desired */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#startRecording{
+    margin-left: 550px;
+}
+
+
+#startRecording:hover,
+#stopRecording:hover {
+    background-color: #0056b3; /* Change the hover background color as desired */
+}
+
+/* Style the disabled Stop Recording button */
+#stopRecording[disabled] {
+    background-color: #ccc; /* Change to a visually disabled color */
+    color: #666; /* Change to a visually disabled text color */
+    cursor: not-allowed; /* Change to a disabled cursor style */
+}
+
+
+
+
+/* Display current and completed tasks side by side */
+#currentTasks,
+#completedTasks {
+    margin-left: 30px;
+    margin-top: 20px;
+    display: inline-block;
+    width: 45%; /* Adjust the width as needed */
+    vertical-align: top; /* Align them to the top */
+}
+
+
+/* Add more CSS styles for your buttons or other elements here */
